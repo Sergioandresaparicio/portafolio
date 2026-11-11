@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="userBg" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="70%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="8" fill="url(#userBg)" stroke="#ffffff" stroke-width="2.5"/>
+  <!-- Chess piece / figure outline -->
+  <circle cx="32" cy="24" r="10" fill="#ffffff" opacity="0.95"/>
+  <path d="M 16,52 C 16,40 23,37 32,37 C 41,37 48,40 48,52 Z" fill="#ffffff" opacity="0.95"/>
+</svg>

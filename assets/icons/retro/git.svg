@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Windows 95 Retro Git Branching Icon -->
+  <rect x="2" y="2" width="28" height="28" fill="#f05032" stroke="#000000" stroke-width="1"/>
+  <!-- Branch lines -->
+  <path d="M11 9v14M11 16l8-5v7" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Commits -->
+  <circle cx="11" cy="9" r="3" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <circle cx="11" cy="23" r="3" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <circle cx="19" cy="11" r="3" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <circle cx="19" cy="18" r="3" fill="#ffcc00" stroke="#000000" stroke-width="1"/>
+</svg>

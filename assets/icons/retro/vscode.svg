@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Windows 95 Retro Visual Studio Code Ribbon Icon -->
+  <rect x="2" y="2" width="28" height="28" fill="#1f1f1f" stroke="#000000" stroke-width="1"/>
+  <!-- VS Code Ribbon in retro pixel/vector style -->
+  <path d="M22 4l5 2v20l-5 2-10-8-5 4-3-2v-4l4-3-4-3v-4l3-2 5 4 10-8z" fill="#007acc" stroke="#ffffff" stroke-width="0.8"/>
+  <path d="M22 9l-7 7 7 7V9z" fill="#005a9e"/>
+</svg>

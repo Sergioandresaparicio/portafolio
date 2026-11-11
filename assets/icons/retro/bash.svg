@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Windows 95 Retro Bash Console Icon -->
+  <rect x="2" y="4" width="28" height="24" fill="#000000" stroke="#808080" stroke-width="1"/>
+  <rect x="2" y="4" width="28" height="4" fill="#808080"/>
+  <!-- Prompt >_ -->
+  <text x="5" y="16" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="#00ff00">&gt;_</text>
+  <text x="5" y="24" font-family="'Courier New', monospace" font-size="8" fill="#ffffff">bash$</text>
+</svg>

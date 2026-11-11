@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <radialGradient id="powerGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ff7b6b"/>
+      <stop offset="60%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </radialGradient>
+  </defs>
+  <circle cx="16" cy="16" r="14" fill="url(#powerGrad)" stroke="#7f1d1d" stroke-width="1.5" />
+  <!-- Power Icon -->
+  <path d="M 16,6 L 16,14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 11,9 A 8 8 0 1 0 21,9" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

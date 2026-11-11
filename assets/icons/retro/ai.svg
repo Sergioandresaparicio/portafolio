@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Windows 95 Retro AI Chip & Spark Icon -->
+  <rect x="2" y="2" width="28" height="28" fill="#1084d0" stroke="#000000" stroke-width="1"/>
+  <!-- Microchip Base -->
+  <rect x="7" y="7" width="18" height="18" fill="#000080" stroke="#ffffff" stroke-width="1"/>
+  <!-- Pins -->
+  <path d="M10 4v3M16 4v3M22 4v3 M10 25v3M16 25v3M22 25v3 M4 10h3M4 16h3M4 22h3 M25 10h3M25 16h3M25 22h3" stroke="#ffcc00" stroke-width="1.2"/>
+  <!-- Spark/Star in center -->
+  <path d="M16 10l1.5 4.5L22 16l-4.5 1.5L16 22l-1.5-4.5L10 16l4.5-1.5z" fill="#ffff00" stroke="#ffffff" stroke-width="0.8"/>
+</svg>

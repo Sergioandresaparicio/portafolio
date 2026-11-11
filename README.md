@@ -1,16 +1,17 @@
-# 🖥️ Sergio.v95 — Retro Operating System Portfolio
+# 🪟 Windows XP & 95 Interactive Portfolio — Sergio Andrés Aparicio
 
 <div align="center">
 
-[![GitHub Pages](https://img.shields.io/badge/Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://sergioandresaparicio.github.io/portafolio/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Demo en GitHub Pages](https://img.shields.io/badge/Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://sergioandresaparicio.github.io/portafolio/)
+[![HTML5](https://img.shields.io/badge/HTML5-Semántico-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-WinXP%20%26%20Win95%20Themes-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript ES6+](https://img.shields.io/badge/JavaScript-ES6%2B%20Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Web Audio API](https://img.shields.io/badge/Audio-Windows%20Sound%20FX-9cf?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-**Una experiencia de usuario interactiva y nostálgica inspirada en Windows 95, diseñada para presentar la trayectoria profesional, proyectos y habilidades de Sergio Andrés Aparicio.**
+**Experiencia web inmersiva que recrea los entornos de escritorio clásicos de Windows XP y Windows 95, integrando juegos funcionales (Buscaminas y Solitario), efectos de audio originales, sistema de ventanas interactivo y la vitrina profesional de Sergio Andrés Aparicio.**
 
-[🌐 Ver Demo en Vivo](https://sergioandresaparicio.github.io/portafolio/) • [📦 Ver Código](https://github.com/Sergioandresaparicio/portafolio) • [🐛 Reportar Problema](https://github.com/Sergioandresaparicio/portafolio/issues)
+[🌐 Probar Portafolio en Vivo](https://sergioandresaparicio.github.io/portafolio/) • [📦 Ver Repositorio](https://github.com/Sergioandresaparicio/portafolio) • [🐛 Reportar Bug](https://github.com/Sergioandresaparicio/portafolio/issues)
 
 </div>
 
@@ -18,104 +19,105 @@
 
 ## 📖 Descripción del Proyecto
 
-**Sergio.v95** no es un portafolio web tradicional: es una simulación visual y funcional de un entorno de escritorio clásico tipo Windows 95 construida enteramente con **tecnologías web nativas (Vanilla HTML5, CSS3 y JavaScript)**, sin dependencias externas pesadas.
+Este portafolio trasciende los formatos convencionales para convertirse en una **aplicación web retro interactiva de alto rendimiento**. Diseñado con rigor artesanal en **Vanilla HTML5, CSS3 y JavaScript ES6+**, recrea fielmente la interfaz gráfica de usuario (GUI), animaciones, paletas y comportamiento de los sistemas operativos más icónicos de la historia informática: **Windows XP (Luna Blue)** y **Windows 95 (Classic)**.
 
-El proyecto permite al reclutador o visitante interactuar con un escritorio virtual, abrir ventanas flotantes independientes, arrastrarlas, minimizarlas, maximizarlas y explorar de manera lúdica:
-* **`Profile.doc`:** La historia profesional y el perfil híbrido (Biólogo, Especialista Ambiental y Desarrollador de Software).
-* **`Experience.exe`:** Cronología de experiencia académica y proyectos en Campuslands.
-* **`Skills.cpl`:** Panel de control de habilidades técnicas (Frontend, Backend, Bases de Datos y Herramientas).
-* **`Contact.lnk`:** Enlaces directos a redes profesionales y formulario de contacto.
+Al iniciar, el visitante es recibido por la clásica **pantalla de inicio de sesión de Windows XP**, con selección de perfil, reproducción de efectos de sonido originales (`xp_startup`, `xp_logon`) y bienvenida interactiva antes de desbloquear el escritorio con el legendario fondo **Bliss**.
 
 ---
 
 ## ✨ Características Principales
 
-* 🪟 **Sistema de Ventanas Múltiples:** Manejo de z-index dinámico, apertura simultánea, enfoque activo, minimizar, maximizar y cerrar.
-* 🖱️ **Interacción de Escritorio:** Iconos interactivos con retroalimentación visual al hacer clic.
-* 🎨 **Estética Retro Pixel-Perfect:** Paleta de colores, sombras biseladas clásicas (`inset` / `outset`) y tipografía estilizada.
-* ⚡ **Alto Rendimiento y Cero Dependencias:** Construido 100% con Vanilla JS, sin frameworks pesados, garantizando tiempos de carga casi instantáneos.
-* 📱 **Despliegue Continuo:** Publicado y disponible permanentemente a través de **GitHub Pages**.
+* 🔐 **Pantalla de Inicio de Sesión Windows XP:** Flujo interactivo de bienvenida con selector de usuario, avatar oficial y audio de inicio de sesión.
+* 🎨 **Soporte Multi-Tema en Caliente:** Conmutación dinámica entre el estilo **Windows XP (Luna)** y **Windows 95 (Classic Teal)**.
+* 🔊 **Motor de Audio Integrado:** Efectos sonoros auténticos (`startup`, `logon`, `click`, `error`, `balloon`, `shutdown`) reproducidos de forma asíncrona mediante HTML5 Audio.
+* 💣 **Juego Buscaminas Funcional (Minesweeper):** Implementación completa del algoritmo clásico de generación de minas, detección de casillas vacías adyacentes (flood fill), contador de banderas y temporizador.
+* 🃏 **Juego Solitario Clásico (Solitaire):** Motor de cartas con mecánicas de arrastre y soltado (Drag & Drop), ordenamiento de palos y victoria animada.
+* 🪟 **Administrador de Ventanas Avanzado:**
+  * Arrastre libre por la barra de título (drag & drop con cálculo de coordenadas del puntero).
+  * Manejo dinámico de foco y orden de apilamiento (`z-index`).
+  * Botones operativos de minimizar, maximizar y cerrar con actualización de la barra de tareas.
+* 📁 **Ventanas del Sistema Integradas:**
+  * **`Profile.doc`:** Biografía y perfil híbrido (Biólogo, Especialista Ambiental y Desarrollador Fullstack/Backend).
+  * **`Experience.exe`:** Cronología de proyectos en Campuslands y experiencia práctica.
+  * **`Skills.cpl`:** Panel de control de tecnologías y herramientas dominadas.
+  * **`Contact.lnk`:** Formulario interactivo y enlaces a LinkedIn y GitHub.
 
 ---
 
-## 🏗️ Arquitectura y Estructura del Código
+## 🏗️ Arquitectura y Estructura del Proyecto
 
-El proyecto sigue una separación rigurosa de responsabilidades (SoC - Separation of Concerns):
+El código está estructurado modularmente para desacoplar el motor de ventanas, los juegos y los estilos temáticos:
 
-```
+```text
 portafolio/
-│
-├── index.html              # Estructura semántica del escritorio y ventanas modales
-├── README.md               # Documentación técnica completa del proyecto
-├── LICENSE                 # Licencia de código abierto MIT
-├── .gitignore              # Exclusiones de control de versiones
+├── index.html                  # Estructura semántica del sistema operativo (Login, Desktop, Taskbar)
+├── README.md                   # Documentación técnica completa
+├── LICENSE                     # Licencia de código abierto MIT
+├── .gitignore                  # Reglas de exclusión de Git
 │
 ├── css/
-│   └── style.css           # Estilos visuales del sistema operativo retro (Win95 UI)
+│   ├── style.css               # Estilos principales de la GUI, ventanas XP y tema Win95
+│   ├── minesweeper.css         # Estilos específicos del juego Buscaminas
+│   └── solitaire.css           # Estilos de cartas, tapete y animaciones de Solitario
 │
 ├── js/
-│   └── script.js           # Lógica del motor de ventanas, eventos DOM y arrastre
+│   ├── script.js               # Motor principal: ventanas, menú inicio, audio, barra de tareas
+│   ├── minesweeper.js          # Lógica completa del juego Buscaminas
+│   └── solitaire.js            # Lógica y motor de reglas del juego Solitario
 │
 └── assets/
-    └── icons/              # Iconografía vectorial en formato SVG optimizado
-        ├── profile.svg     # Icono de documento de perfil
-        ├── experience.svg  # Icono de ejecutable de experiencia
-        ├── skills.svg      # Icono de panel de habilidades
-        ├── contact.svg     # Icono de acceso directo de contacto
-        ├── smartcity.svg   # Iconos temáticos de proyectos
-        └── start.svg       # Icono del menú Inicio
+    ├── profile.jpg             # Fotografía profesional de perfil
+    ├── audio/                  # Efectos de sonido originales (win95, xp_startup, click, etc.)
+    ├── wallpaper/              # Fondo clásico Bliss de alta resolución
+    └── icons/                  # Iconografía SVG vectorial
+        ├── retro/              # Iconos de tecnologías (Python, Java, Docker, n8n, etc.)
+        └── xp/                 # Iconos del sistema Windows XP (Bandera, Apagar, Usuario, etc.)
 ```
 
 ---
 
 ## 🚀 Instalación y Ejecución Local
 
-Para clonar y explorar este proyecto en tu entorno local:
+### Demo en Producción
+Disponible de forma continua en **GitHub Pages**:  
+👉 **[https://sergioandresaparicio.github.io/portafolio/](https://sergioandresaparicio.github.io/portafolio/)**
 
-### Prerrequisitos
-* Un navegador web moderno (Google Chrome, Mozilla Firefox, Microsoft Edge o Safari).
-* [Git](https://git-scm.com/) instalado en tu equipo.
-
-### Pasos de ejecución
+### Despliegue Local
 ```bash
 # 1. Clonar el repositorio
 git clone https://github.com/Sergioandresaparicio/portafolio.git
 
-# 2. Navegar al directorio del proyecto
+# 2. Navegar a la carpeta
 cd portafolio
 
-# 3. Abrir en tu navegador
+# 3. Abrir index.html en el navegador
 # En Windows (PowerShell):
 Start-Process index.html
 
-# O utilizando la extensión Live Server en VS Code:
+# O ejecutando Live Server en VS Code:
 code .
 ```
 
 ---
 
-## 🔄 Flujo de Trabajo y Buenas Prácticas de Git
+## 🔄 Flujo de Trabajo Git & Conventional Commits
 
-* **Conventional Commits:** Historial de cambios descriptivo y estandarizado con prefijos semánticos (`feat:`, `fix:`, `docs:`, `style:`, `refactor:`).
-* **Control de Versiones Semántico (SemVer):** Versionamiento estructurado (`v1.0.0`).
-* **Clean Code en Frontend:** Código JavaScript modularizado por funciones, manejo de eventos desacoplado y nomenclatura clara en clases CSS (BEM modificado).
+* `feat(portfolio): ✨ migrar portafolio interactivo a Windows XP/95 con Buscaminas, Solitario y audio`
+* `docs(readme): 📚 documentar arquitectura del sistema, soporte multi-tema y demo Pages`
+* `style(xp): 🎨 afinar estilos de pantalla de inicio de sesión y barra de tareas Luna`
+* `fix(audio): 🐛 optimizar precarga de efectos de sonido para evitar bloqueos de autoplay`
 
----
-
-## 🌐 Despliegue en Producción
-
-El frontend se encuentra desplegado y alojado en **GitHub Pages**:
-🔗 **[https://sergioandresaparicio.github.io/portafolio/](https://sergioandresaparicio.github.io/portafolio/)**
+Gestionado bajo el modelo **Gitflow** con ramas `main`, `develop` y `gh-pages`, junto al tag de lanzamiento mayor (**SemVer**) `v2.0.0`.
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto se encuentra bajo la Licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia **MIT** — consulta el archivo [LICENSE](LICENSE) para más información.
 
 ---
 
-## 📬 Contacto
+## 👨‍💻 Autor
 
 **Sergio Andrés Aparicio Galvis**  
 * 💼 LinkedIn: [sergio-andrés-aparicio-galvis](https://linkedin.com/in/sergio-andr%c3%a9s-aparicio-galvis-62b6b8213)  

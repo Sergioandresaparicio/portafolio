@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Windows 95 Retro MySQL Dolphin Icon -->
+  <rect x="2" y="2" width="28" height="28" fill="#00758f" stroke="#000000" stroke-width="1"/>
+  <!-- Dolphin silhouette -->
+  <path d="M7 21c3-2 5-6 8-8 3-2 7-3 10-1-1 2-2 4-4 5 3 0 5-1 6-2-2 4-6 6-9 6-3 0-5 2-8 3l-3-3z" fill="#f29111" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="21" cy="12" r="1" fill="#ffffff"/>
+  <!-- DB Cylinders base -->
+  <path d="M6 25c0-1 4-2 10-2s10 1 10 2v2c0 1-4 2-10 2s-10-1-10-2v-2z" fill="#ffffff" opacity="0.8"/>
+</svg>

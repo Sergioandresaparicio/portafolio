@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Windows 95 Retro HTML5 Shield Icon -->
+  <rect x="2" y="2" width="28" height="28" fill="#ffffff" stroke="#808080" stroke-width="1"/>
+  <!-- Shield -->
+  <path d="M6 5l2 18 8 4 8-4 2-18H6z" fill="#e44d26" stroke="#000000" stroke-width="1"/>
+  <path d="M16 7v18.5l6-3.2 1.5-15.3H16z" fill="#f16529"/>
+  <!-- '5' / tag brackets -->
+  <path d="M10 10h12l-1 4h-7l.5 3h6.5l-1 7-5 2-5-2 .5-3h3l.2 1 1.8-.5.5-3.5h-9l1.5-8z" fill="#ffffff"/>
+</svg>

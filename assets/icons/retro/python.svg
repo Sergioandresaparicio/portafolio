@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Windows 95 Retro Python Icon -->
+  <rect x="2" y="2" width="28" height="28" rx="2" fill="#ffffff" stroke="#808080" stroke-width="1"/>
+  <!-- Top snake (Blue) -->
+  <path d="M15 5h-4a4 4 0 0 0-4 4v3h8v2H7a4 4 0 0 0-4 4v1h3v-1a2 2 0 0 1 2-2h7a2 2 0 0 0 2-2V9a4 4 0 0 0-4-4z" fill="#000080" stroke="#000040" stroke-width="0.8"/>
+  <circle cx="10" cy="8" r="1" fill="#ffffff"/>
+  <!-- Bottom snake (Yellow/Gold) -->
+  <path d="M17 27h4a4 4 0 0 0 4-4v-3h-8v-2h8a4 4 0 0 0 4-4v-1h-3v1a2 2 0 0 1-2 2h-7a2 2 0 0 0-2 2v5a4 4 0 0 0 4 4z" fill="#ffcc00" stroke="#b38600" stroke-width="0.8"/>
+  <circle cx="22" cy="24" r="1" fill="#000000"/>
+</svg>

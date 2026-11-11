@@ -1,0 +1,418 @@
+/* ============================================================
+   Windows 95 Minesweeper Stylesheet
+   ============================================================ */
+
+.minesweeper-window {
+    min-width: 240px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.minesweeper-window.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menubar */
+.minesweeper-menubar {
+    display: flex;
+    background-color: var(--win-bg);
+    border-bottom: 1px solid var(--win-border-dark);
+    padding: 2px 4px;
+    font-size: 11px;
+    position: relative;
+}
+
+.minesweeper-menu-btn {
+    padding: 2px 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.minesweeper-menu-btn:hover,
+.minesweeper-menu-btn.active {
+    background-color: var(--win-blue-start);
+    color: var(--win-text-light);
+}
+
+.minesweeper-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--win-bg);
+    border-top: 1.5px solid var(--win-light);
+    border-left: 1.5px solid var(--win-light);
+    border-right: 1.5px solid var(--win-dark);
+    border-bottom: 1.5px solid var(--win-dark);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    min-width: 170px;
+    z-index: 2000;
+    padding: 2px;
+}
+
+.minesweeper-dropdown.active {
+    display: block;
+}
+
+.minesweeper-dropdown-item {
+    padding: 4px 12px;
+    color: var(--win-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.minesweeper-dropdown-item:hover {
+    background-color: var(--win-blue-start);
+    color: var(--win-text-light);
+}
+
+.minesweeper-dropdown-item.checked::before {
+    content: "✓ ";
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.minesweeper-dropdown-divider {
+    height: 1px;
+    background-color: var(--win-border-dark);
+    border-bottom: 1px solid var(--win-light);
+    margin: 2px 0;
+}
+
+/* Main Playing Frame */
+.minesweeper-container {
+    background-color: var(--win-bg);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    overflow: auto;
+}
+
+/* Header Area (Bordered Sunken 3D Frame) */
+.minesweeper-header {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--win-bg);
+    border-top: 2px solid var(--win-border-dark);
+    border-left: 2px solid var(--win-border-dark);
+    border-right: 2px solid var(--win-light);
+    border-bottom: 2px solid var(--win-light);
+    padding: 5px 8px;
+    margin-bottom: 6px;
+}
+
+/* 7-Segment LED Digital Display */
+.led-display {
+    background-color: #000000;
+    border-top: 1.5px solid var(--win-border-dark);
+    border-left: 1.5px solid var(--win-border-dark);
+    border-right: 1.5px solid var(--win-light);
+    border-bottom: 1.5px solid var(--win-light);
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    padding: 1px 4px;
+    min-width: 48px;
+    text-align: right;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Yellow Smiley Face Button */
+.smiley-btn {
+    width: 28px;
+    height: 28px;
+    background-color: var(--win-bg);
+    border-top: 2px solid var(--win-light);
+    border-left: 2px solid var(--win-light);
+    border-right: 2px solid var(--win-dark);
+    border-bottom: 2px solid var(--win-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.smiley-btn:active,
+.smiley-btn.pressed {
+    border-top: 2px solid var(--win-dark);
+    border-left: 2px solid var(--win-dark);
+    border-right: 2px solid var(--win-light);
+    border-bottom: 2px solid var(--win-light);
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+.smiley-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffff00;
+    border: 1.5px solid #000000;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Normal Smiley: 🙂 */
+.smiley-icon.normal::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 2.5px;
+    height: 3px;
+    background: #000;
+    box-shadow: 7px 0 0 #000;
+    border-radius: 50%;
+}
+.smiley-icon.normal::after {
+    content: "";
+    position: absolute;
+    bottom: 3.5px;
+    left: 4px;
+    width: 8px;
+    height: 4px;
+    border-bottom: 2px solid #000;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Scared Smiley (Mouse down on cell): 😮 */
+.smiley-icon.scared::before {
+    content: "";
+    position: absolute;
+    top: 4.5px;
+    left: 3.5px;
+    width: 2.5px;
+    height: 3px;
+    background: #000;
+    box-shadow: 6.5px 0 0 #000;
+    border-radius: 50%;
+}
+.smiley-icon.scared::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 5.5px;
+    width: 5px;
+    height: 5px;
+    background: #000;
+    border-radius: 50%;
+}
+
+/* Dead Smiley (Game Over / Lost): 😵 */
+.smiley-icon.dead::before {
+    content: "✕ ✕";
+    position: absolute;
+    top: 1px;
+    left: 1.5px;
+    font-size: 7.5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #000;
+    line-height: 1;
+}
+.smiley-icon.dead::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 4px;
+    width: 8px;
+    height: 3.5px;
+    border-top: 2px solid #000;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Cool Smiley (Game Won): 😎 */
+.smiley-icon.won::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 1.5px;
+    width: 14px;
+    height: 4.5px;
+    background: #000000;
+    border-radius: 2px;
+}
+.smiley-icon.won::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 4px;
+    width: 8px;
+    height: 4px;
+    border-bottom: 2px solid #000;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Mobile Touch Controls Mode Selector */
+.minesweeper-mobile-toolbar {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.minesweeper-mode-btn {
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    background: var(--win-bg);
+    border-top: 1.5px solid var(--win-light);
+    border-left: 1.5px solid var(--win-light);
+    border-right: 1.5px solid var(--win-dark);
+    border-bottom: 1.5px solid var(--win-dark);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.minesweeper-mode-btn.active {
+    border-top: 1.5px solid var(--win-dark);
+    border-left: 1.5px solid var(--win-dark);
+    border-right: 1.5px solid var(--win-light);
+    border-bottom: 1.5px solid var(--win-light);
+    background-color: var(--win-border-light);
+    color: var(--win-blue-start);
+}
+
+/* Minefield Board Wrapper (Sunken Frame) */
+.minesweeper-board-wrapper {
+    border-top: 3px solid var(--win-border-dark);
+    border-left: 3px solid var(--win-border-dark);
+    border-right: 3px solid var(--win-light);
+    border-bottom: 3px solid var(--win-light);
+    background-color: #808080;
+    padding: 0;
+    overflow: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.minesweeper-board {
+    display: grid;
+    background-color: #808080;
+    gap: 0px;
+}
+
+/* Individual Minesweeper Cell */
+.minesweeper-cell {
+    width: 22px;
+    height: 22px;
+    box-sizing: border-box;
+    background-color: var(--win-bg);
+    border-top: 2px solid var(--win-light);
+    border-left: 2px solid var(--win-light);
+    border-right: 2px solid var(--win-dark);
+    border-bottom: 2px solid var(--win-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Pressed Cell (revealed / 0 / empty) */
+.minesweeper-cell.revealed {
+    border: 1px solid #7b7b7b;
+    border-top-color: #7b7b7b;
+    border-left-color: #7b7b7b;
+    border-right-color: #e0e0e0;
+    border-bottom-color: #e0e0e0;
+    background-color: #c0c0c0;
+    cursor: default;
+}
+
+/* Number colors in classic Windows 95 */
+.minesweeper-cell[data-num="1"] { color: #0000ff; }
+.minesweeper-cell[data-num="2"] { color: #008000; }
+.minesweeper-cell[data-num="3"] { color: #ff0000; }
+.minesweeper-cell[data-num="4"] { color: #000080; }
+.minesweeper-cell[data-num="5"] { color: #800000; }
+.minesweeper-cell[data-num="6"] { color: #008080; }
+.minesweeper-cell[data-num="7"] { color: #000000; }
+.minesweeper-cell[data-num="8"] { color: #808080; }
+
+/* Hit Exploded Mine (Game Lost) */
+.minesweeper-cell.exploded {
+    background-color: #ff0000 !important;
+    border: 1px solid #800000;
+}
+
+/* False Flag (flagged cell that wasn't a mine) */
+.minesweeper-cell.wrong-flag {
+    background-color: #c0c0c0;
+    position: relative;
+}
+.minesweeper-cell.wrong-flag::after {
+    content: "✕";
+    position: absolute;
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+/* Minesweeper Status Bar */
+.minesweeper-statusbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--win-bg);
+    border-top: 1.5px solid var(--win-light);
+    padding: 2px 6px;
+    font-size: 11px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive Rules for Minesweeper */
+@media (max-width: 768px) {
+    .minesweeper-window {
+        position: fixed !important;
+        top: 4px !important;
+        left: 4px !important;
+        right: 4px !important;
+        bottom: 34px !important;
+        width: auto !important;
+        height: auto !important;
+        max-width: calc(100vw - 8px) !important;
+        max-height: calc(100vh - 38px) !important;
+    }
+
+    .minesweeper-mobile-toolbar {
+        display: flex;
+    }
+
+    .minesweeper-container {
+        padding: 6px;
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    .minesweeper-cell {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+
+    .minesweeper-board-wrapper {
+        max-height: calc(100vh - 200px);
+        -webkit-overflow-scrolling: touch;
+    }
+}

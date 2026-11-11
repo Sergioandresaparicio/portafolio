@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Windows 95 Retro Spring Boot Leaf Icon -->
+  <rect x="2" y="2" width="28" height="28" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <!-- Leaf Hexagon / Leaf Silhouette -->
+  <path d="M16 5l8 5v12l-8 5-8-5V10l8-5z" fill="#008000" stroke="#004000" stroke-width="1"/>
+  <!-- Leaf vein & spring curve -->
+  <path d="M16 8v16M11 13c3 1 5 3 5 3s2-2 5-3M12 19c2 1 4 2 4 2s2-1 4-2" fill="none" stroke="#66ff66" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Windows 95 Retro PowerShell Icon -->
+  <rect x="2" y="4" width="28" height="24" fill="#012456" stroke="#808080" stroke-width="1"/>
+  <rect x="2" y="4" width="28" height="4" fill="#1084d0"/>
+  <!-- PS Prompt -->
+  <text x="5" y="15" font-family="'Courier New', monospace" font-size="7" font-weight="bold" fill="#ffffff">PS&gt;</text>
+  <rect x="18" y="10" width="4" height="6" fill="#ffffff"/>
+  <text x="5" y="24" font-family="'Courier New', monospace" font-size="6" fill="#ffffff">.\script.ps1</text>
+</svg>
