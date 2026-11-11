@@ -1,0 +1,16 @@
+# Dependencias y temporales
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+build/
+
+# IDEs y Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
